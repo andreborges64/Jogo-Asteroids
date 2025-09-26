@@ -1,10 +1,51 @@
-body, html { margin:0; padding:0; background:#000; overflow:hidden; font-family:Arial, sans-serif; color:#fff; }
-#menu { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); text-align:center; z-index:10; }
-#menu h1 { font-size:3em; margin-bottom:20px; }
-#menu select, #menu button { margin:10px; padding:15px 25px; background:#222; border:2px solid #0f0; border-radius:10px; color:#0f0; font-size:1.2em; cursor:pointer; }
-#hud { position:absolute; top:10px; left:10px; z-index:10; display:none; }
-canvas { display:block; }
-footer { position:absolute; bottom:10px; width:100%; text-align:center; font-size:0.8em; color:rgb(243, 2, 2);z-index: 20; }
+body, html {
+  margin:0; 
+  padding:0; 
+  background:#000; 
+  overflow:hidden; 
+  font-family:Arial, sans-serif; 
+  color:#fff; 
+}
+#menu { 
+  position:absolute; 
+  top:50%; 
+  left:50%; 
+  transform:translate(-50%,-50%); 
+  text-align:center; z-index:10; 
+}
+#menu h1 {
+  font-size:3em; 
+  margin-bottom:20px;
+}
+#menu select, #menu button {
+  margin:10px; 
+  padding:15px 25px; 
+  background:#222; 
+  border:2px solid #0f0;
+  border-radius:10px;
+  color:#0f0; 
+  font-size:1.2em;
+  cursor:pointer;
+}
+#hud {
+  position:absolute;
+  top:10px;
+  left:10px;
+  z-index:10;
+  display:none;
+}
+canvas {
+  display:block;
+}
+footer { 
+  position:absolute; 
+  bottom:10px; 
+  width:100%; 
+  text-align:center; 
+  font-size:0.8em; 
+  color:rgb(243, 2, 2);
+  z-index: 20;
+}
 /* Analógico */
 #joystick {
   position: absolute;
