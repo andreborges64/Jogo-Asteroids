@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <title>Asteroids Survival</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="game.js" defer></script>
+</head>
+<body>
+  <div id="menu">
+    <h1>Asteroids Survival</h1>
+    <label>Selecionar Fase:</label>
+    <select id="faseSelect"></select><br>
+    <button onclick="startGame()">Iniciar</button>
+    <button onclick="resetProgress()">Resetar Progresso</button>
+    <div id="record">Recorde: 0</div>
+  </div>
+  <div id="hud">
+    <span id="fase"></span> | <span id="tempo"></span> | <span id="score">Pontuação: 0</span>
+    <button onclick="togglePause()">Pausar</button>
+    <button onclick="returnMenu()">Menu</button>
+  </div>
+  <canvas id="gameCanvas"></canvas>
+  <!-- Analógico virtual -->
+  <div id="joystick">
+    <div id="stick"></div>
+    <div class="arrow arrow-up"></div>
+    <div class="arrow arrow-down"></div>
+    <div class="arrow arrow-left"></div>
+    <div class="arrow arrow-right"></div>
+  </div>
+  <!-- Botão de disparo -->
+  <button id="fireBtn"><span class="fire-icon"></span></button>
+  <footer>
+    <p>&copy; 2025 André Luiz Silva Dias Borges. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
